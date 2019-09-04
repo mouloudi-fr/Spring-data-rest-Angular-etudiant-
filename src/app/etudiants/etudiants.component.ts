@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import {error} from "util";
 
 @Component({
   selector: 'app-etudiants',
@@ -12,6 +13,7 @@ export class EtudiantsComponent implements OnInit {
   listFormations;
   listEtudiants;
   currentFormation=-1;
+
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
@@ -29,4 +31,6 @@ export class EtudiantsComponent implements OnInit {
     });
   }
 
-}
+  }
+
+
